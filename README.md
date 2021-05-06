@@ -1,2 +1,12 @@
-# Increase-Reaction-Time-Games
-Increase Your Reaction Time Game - Lets see whats you high score or minimum time to react
+# Increase Reaction Time
+
+<pre>
+Increase Your Reaction Time
+
+Lets see whats you high score
+OR
+Minimum time to React
+</pre>
+
+
+### Currently Under Development
