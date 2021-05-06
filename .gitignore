@@ -1,0 +1,14 @@
+# vscode
+.vscode
+
+# foo files
+foo.*
+bar.*
+foobar.*
+testing.*
+
+# foo folders
+foo
+bar
+foobar
+testing
