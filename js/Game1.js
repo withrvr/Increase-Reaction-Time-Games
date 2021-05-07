@@ -2,6 +2,7 @@ const no_of_row = 4;
 const no_of_col = 3;
 const min = 1;
 const max = no_of_row * no_of_col;
+const timer = 2;
 
 const no_of_turns = 5;
 let current_turn = no_of_turns;
@@ -65,11 +66,11 @@ function nextBlockToClick() {
 			end_game_time = new Date().getTime();
 			let time_required = (end_game_time - start_game_time) / 1000;
 			alert(
-				`\nYou Clicked ${no_of_turns} boxed in ${time_required} secounds`
+				`\nYou Clicked ${no_of_turns} boxes in ${time_required} seconds`
 			);
 
 			current_turn = no_of_turns;
-			startGameTimer(3);
+			startGameTimer(timer);
 		} else {
 			nextBlockToClick();
 		}
@@ -77,7 +78,7 @@ function nextBlockToClick() {
 }
 
 function startGameTimer(timer) {
-	$("#stats").text(`Game starting in ${timer} Secounds`);
+	$("#stats").text(`Game starting in ${timer} Seconds`);
 	setTimeout(function () {
 		if (--timer === 0) {
 			$("#stats").text("Go Go Go");
@@ -89,4 +90,4 @@ function startGameTimer(timer) {
 	}, 1000);
 }
 
-startGameTimer(3);
+startGameTimer(timer);
